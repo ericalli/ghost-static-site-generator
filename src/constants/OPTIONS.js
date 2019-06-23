@@ -43,7 +43,7 @@ const OPTIONS = {
   // --ignore-absolute-paths flag will remove all urls
   IGNORE_ABSOLUTE_PATHS,
   // --ignore-robots will ignore robots.txt
-  IGNORE_ROBOTS
+  IGNORE_ROBOTS,
 };
 
 module.exports = OPTIONS;
