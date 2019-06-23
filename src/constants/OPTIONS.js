@@ -5,6 +5,7 @@ const { execSync } = require('child_process');
 const DOMAIN = argv.domain || 'http://localhost:2368';
 const URL = argv.url || 'http://localhost:2368';
 const IGNORE_ABSOLUTE_PATHS = argv.ignoreAbsolutePaths || false;
+const IGNORE_ROBOTS = argv.ignoreRobots || false;
 const STATIC_DIRECTORY = argv.dest || 'static';
 
 const shouldShowProgress = () => {
@@ -41,6 +42,8 @@ const OPTIONS = {
     : '',
   // --ignore-absolute-paths flag will remove all urls
   IGNORE_ABSOLUTE_PATHS,
+  // --ignore-robots will ignore robots.txt
+  IGNORE_ROBOTS
 };
 
 module.exports = OPTIONS;
