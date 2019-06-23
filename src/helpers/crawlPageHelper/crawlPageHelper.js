@@ -22,6 +22,7 @@ const crawlPageHelper = (url) => {
     + '--restrict-file-name=unix '
     + '--trust-server-names '
     + `--directory-prefix ${OPTIONS.STATIC_DIRECTORY} ${contentOnError()}`
+    + '-e robots=off '
     + `${url}`;
 
   try {
