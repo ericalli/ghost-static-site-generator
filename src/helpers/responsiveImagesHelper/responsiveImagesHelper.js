@@ -66,7 +66,7 @@ const responsiveImagesHelper = () => {
       OPTIONS.DOMAIN,
     );
 
-    crawlPageAsyncHelper(url);
+    crawlPageHelper(url);
   });
 };
 
