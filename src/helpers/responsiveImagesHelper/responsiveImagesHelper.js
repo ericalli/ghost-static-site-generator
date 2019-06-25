@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const OPTIONS = require('../../constants/OPTIONS');
-const crawlPageAsyncHelper = require('../crawlPageAsyncHelper');
+const crawlPageHelper = require('../crawlPageHelper');
 
 /**
  * These are the image sizes that we want to generate
