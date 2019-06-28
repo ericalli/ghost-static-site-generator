@@ -15,6 +15,7 @@ const contentOnError = () => {
 
 const crawlPageHelper = (url) => {
   const wgetCommand = `wget -q ${OPTIONS.SHOW_PROGRESS_BAR}--recursive `
+    + '--exclude-directories=/content/ '
     + '--timestamping '
     + '--page-requisites '
     + '--no-parent '
