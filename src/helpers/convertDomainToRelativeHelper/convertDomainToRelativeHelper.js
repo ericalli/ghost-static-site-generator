@@ -33,7 +33,7 @@ const convertDomainToRelativeHelper = (
    * ./../
    */
   const relativePathPrefix = new Array(numberOfLevels)
-    .fill('../')
+    .fill('..')
     .join('')
     .substring(1);
 
