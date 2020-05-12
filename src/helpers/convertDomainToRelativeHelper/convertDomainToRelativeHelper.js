@@ -33,7 +33,7 @@ const convertDomainToRelativeHelper = (
    * ./../
    */
   const relativePathPrefix = new Array(numberOfLevels)
-    .fill('..')
+    .fill('../')
     .join('')
     .substring(1);
 
@@ -43,7 +43,7 @@ const convertDomainToRelativeHelper = (
   ).replace(
     new RegExp(`(src=")${urlWithoutProtocol}`, 'g'),
     `$1${relativePathPrefix}`,
-  );
+  ).split('./..//').join('./../');
 };
 
 module.exports = convertDomainToRelativeHelper;
