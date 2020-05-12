@@ -36,7 +36,7 @@ const generateStaticSite = () => {
       /**
        * Generate all missing responsive images
        */
-      responsiveImagesHelper();
+      // responsiveImagesHelper();
 
       /**
        * Remove all query strings = file names
